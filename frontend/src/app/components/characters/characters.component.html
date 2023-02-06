@@ -1,0 +1,95 @@
+<div>
+  <div class="col-md-3 mycard">
+    <div class="row">
+      <input type="text" class="mb-3" name="search" [(ngModel)]="searchText" placeholder="Buscar personaje">
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mycard" *ngFor="let item of charactersFilters | filter:searchText">
+        <div class="card mb-4" [title]=" item.myList ? 'Agregado a mi lista' : 'Aún no está en mi lista'"
+          style="width: 18rem;">
+          <div class="inner">
+            <img src="{{item.image}}" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title" [style.opacity]="item.myList ? 0.3 : 1">{{item.name}}</h5>
+            <p class="card-text" [style.opacity]="item.myList ? 0.3 : 1"><b>Género:</b> {{item.gender}} | <b>Estado:</b>
+              {{item.status}}</p>
+            <button class="btn btn-sm btn-success addfav" [disabled]="item.myList" (click)="open(content, item)">Agregar
+              a mi lista</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Record and comment modal -->
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{favorite.name}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <div style="width: 100%; overflow:hidden ">
+          <label style="white-space: pre-wrap;"><b>Episodios:</b> {{favorite.episode}}</label>
+        </div>
+
+        <br>
+        <label class="mb-3"><b>Calificación:</b> {{qualify}}</label>
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" value="0" [(ngModel)]="qualify"><br> 0
+              </label>
+            </div>
+            <div class="col">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" value="1" [(ngModel)]="qualify"><br> 1
+              </label>
+            </div>
+            <div class="col">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" value="2" [(ngModel)]="qualify"><br> 2
+              </label>
+            </div>
+            <div class="col">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" value="3" [(ngModel)]="qualify"><br> 3
+              </label>
+            </div>
+            <div class="col">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" value="4" [(ngModel)]="qualify"><br> 4
+              </label>
+            </div>
+            <div class="col">
+              <label class="btn btn-outline-primary">
+                <input type="radio" name="options" value="5" [(ngModel)]="qualify"><br> 5
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Inicio: Comentario -->
+        <div class="mt-3 mb-3">
+          <div class="container text-center">
+            <div class="row align-items-center">
+              <div class="col">
+                <input type="text" name="comment" maxlength="25" class="form-control" [(ngModel)]="comment"
+                  placeholder="Comentario">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin: Comentario -->
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Guardar</button>
+  </div>
+</ng-template>

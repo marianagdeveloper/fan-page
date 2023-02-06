@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5)
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: goldenrod;
+  border-width: 3px;
+}
+
+.mycard {
+  display: flex;
+  justify-content: center;
+}
+
+.card-title {
+  background: gold;
+  padding: 0.5rem;
+}
+
+.card-text {
+  padding: 0.2rem;
+}

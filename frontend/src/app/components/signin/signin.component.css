@@ -1,0 +1,16 @@
+.container {
+  margin-top: 8%;
+}
+
+.form-group {
+  padding-bottom: 1rem;
+}
+
+.btnsesion {
+  display: flex;
+  justify-content: center;
+}
+
+.card-header {
+  font-weight: 600;
+}

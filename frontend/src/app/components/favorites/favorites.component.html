@@ -1,0 +1,27 @@
+<div>
+  <div class="col-md-3 mycard">
+    <div class="row" *ngIf="this.favorites[0] != null">
+      <input type="text" class="mb-3" name="search" [(ngModel)]="searchText" placeholder="Buscar personaje">
+    </div>
+  </div>
+  <h5 style="text-align: center; color: white" *ngIf="this.favorites[0] == null">Aún no tienes personajes favoritos en
+    tu lista</h5>
+  <!-- Start: Cards -->
+  <div class="container">
+    <div class="row" *ngIf="this.favorites[0] != null">
+      <div class="col-md-4 mycard" *ngFor="let item of favorites | filter:searchText">
+        <div class="card  mb-4" style="width: 18rem;">
+          <div class="inner">
+            <img src="{{item.image}}" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text"><b>Calificación:</b> {{item.record}} </p>
+            <p class="card-text"><b>Comentario:</b> {{item.comment}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End: Cards -->
+</div>

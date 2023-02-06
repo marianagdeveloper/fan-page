@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card">
+        <div class="card-header">
+          Registro de usuario
+        </div>
+        <div class="card-body">
+          <form [formGroup]="registerUserForm" (ngSubmit)="signUp()">
+            <div class="form-group">
+              <!-- <input type="text" [(ngModel)]="user.name" name="name" class="form-control" -->
+              <input type="text" name="name" class="form-control"
+                [class.is-invalid]="registerUserForm.get('name')?.invalid && registerUserForm.get('name')?.touched"
+                placeholder="Nombre y Apellido" autofocus formControlName="name">
+            </div>
+            <div class="form-group">
+              <!-- <input type="text" [(ngModel)]="user.username" name="username" class="form-control" -->
+              <input type="text" name="username" class="form-control"
+                [class.is-invalid]="registerUserForm.get('username')?.invalid && registerUserForm.get('username')?.touched" placeholder="Nickname"
+                formControlName="username">
+            </div>
+            <div class="form-group">
+              <!-- <input type="email" [(ngModel)]="user.email" name="email" class="form-control" placeholder="Email" formControlName="email"> -->
+              <input type="email" name="email" class="form-control" placeholder="Email" formControlName="email"
+                [class.is-invalid]="registerUserForm.get('email')?.invalid && registerUserForm.get('email')?.touched">
+            </div>
+            <div class="form-group">
+              <!-- <input type="password" [(ngModel)]="user.password" name="password" class="form-control" -->
+              <input type="password" name="password" class="form-control"
+                [class.is-invalid]="registerUserForm.get('password')?.invalid && registerUserForm.get('password')?.touched"
+                placeholder="Contraseña (Min. 6 carácteres)" formControlName="password">
+            </div>
+            <div class="btnsesion">
+              <button type="submit" class="btn btn-primary btn-block" [disabled]="!registerUserForm.valid">
+                Registrarse
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

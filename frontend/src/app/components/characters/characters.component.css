@@ -1,0 +1,46 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5)
+}
+
+.mycard {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: lightslategrey;
+  border-width: 3px;
+}
+
+.card-body {
+  margin: 0;
+  padding: 0;
+}
+
+.card-title {
+  background: rgba(135, 206, 250, 0.729);
+  padding: 0.5rem;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.addfav {
+  margin: 1rem;
+}
