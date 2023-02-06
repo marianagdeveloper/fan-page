@@ -54,14 +54,14 @@ Este proyecto es contruido en una **Single-page Application** (SPA) responsive (
 
     En ambas vistas existe un buscador tipo input que filtra los personajes
 
-  - **📌 Tecnología empleadas:**
+  - **📌 Tecnología empleada:**
     - Angular versión 12
     - Bootstrap versión 5
 
 ## 3. API 🕵🏽‍♂️ 
 Se desarrolló una pequeña api para la creación, sesión de usuarios y la información de "Mi lista de personajes":
   
-  - **📌 Tecnologías empleadas:**
+  - **📌 Tecnologías empleada:**
     - NodeJS versión 14
     - MongoDB versión 5
   - **📌 Vistas públicas:** 
