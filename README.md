@@ -110,40 +110,26 @@ Para la ejecución del frontend:
 <img src="/frontend/src/assets/login.png">
 </div>
 
-**
-
 ### Vista: Registro de usuario
 <div align="center">
 <img src="/frontend/src/assets/signup.png">
 </div>
-
-**
 
 ### Vista: Personajes de Rick & Morty
 <div align="center">
 <img src="/frontend/src/assets/signup.png">
 </div>
 
-**
-
 ### Vista: Calificación y comentario de personajes favoritos
 <div align="center">
 <img src="/frontend/src/assets/record.png">
 </div>
 
-**
-
 ### Vista: Lista de personajes favoritos
 <div align="center">
 <img src="/frontend/src/assets/favorites.png">
 </div>
 
-**
-
-### Vista: Lista de personajes favoritos
-<div align="center">
-<img src="/frontend/src/assets/favorites.png">
-</div>
 
 
 
