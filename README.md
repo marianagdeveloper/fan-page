@@ -46,7 +46,7 @@ Este proyecto es contruido en una **Single-page Application** (SPA) responsive (
         - 5. Estado( Vivo, muerto, desconocido)
         - 6. Botón "Agregar a mi lista"
   - Mi lista de personajes
-   - Tarjetas
+    - Tarjetas
         - 1. Imagen del personaje
         - 2. Nombre en la serie
         - 3. Género
@@ -114,35 +114,35 @@ Para la ejecución del frontend:
 
 ### Vista: Registro de usuario
 <div align="center">
-<img src="/frontend/src/assets/signup.png" width="800">
+<img src="/frontend/src/assets/signup.png">
 </div>
 
 **
 
 ### Vista: Personajes de Rick & Morty
 <div align="center">
-<img src="/frontend/src/assets/signup.png" width="800">
+<img src="/frontend/src/assets/signup.png">
 </div>
 
 **
 
 ### Vista: Calificación y comentario de personajes favoritos
 <div align="center">
-<img src="/frontend/src/assets/record.png" width="800">
+<img src="/frontend/src/assets/record.png">
 </div>
 
 **
 
 ### Vista: Lista de personajes favoritos
 <div align="center">
-<img src="/frontend/src/assets/favorites.png" width="800">
+<img src="/frontend/src/assets/favorites.png">
 </div>
 
 **
 
 ### Vista: Lista de personajes favoritos
 <div align="center">
-<img src="/frontend/src/assets/favorites.png" width="800">
+<img src="/frontend/src/assets/favorites.png">
 </div>
 
 
