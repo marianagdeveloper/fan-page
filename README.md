@@ -1,9 +1,10 @@
 ## ÍNDICE
-* [1. Rick & Morty Fanpage ](#1-Rick-&-Morty-Fanpage )
+* [1. Rick & Morty Fanpage](#1-Rick-&-Morty-Fanpage )
 * [2. Proyecto](#2-proyecto)
 * [3. API](#3-api)
 * [4. Decisiones técnicas](#4-decisiones-tecnicas)
-* [5. Autor](#6-autor)
+* [5. Autor](#5-autor)
+* [6. Resultado final](#6-resultado-final)
 
 ***
 <img src="/frontend/src/assets/readme.jpeg" width="800">
@@ -11,7 +12,7 @@
 
 # 1. Rick & Morty Fanpage
 
-✍ Es una página web para los fans de la serie Rick and Morty. Permite a cualquier usuario crearse una cuenta de acceso y loguearse con ella; ver los personajes en tarjetas personalizadas y agregarlos a la lista de personajes favoritos.
+✍ Es una página web para los fans de la serie Rick and Morty. Permite a cualquier usuario crearse una cuenta de acceso y loguearse con ella; ver los personajes en tarjetas personalizadas, calificarlos, comentar la calificación asognada y agregarlos a la lista de personajes favoritos.
 
 Este proyecto es contruido en una **Single-page Application** (SPA) responsive (con más de una vista / página).
 
@@ -93,12 +94,56 @@ Para la ejecución del frontend:
 ## 4. Decisiones técnicas 📍
 
 - Para la implementación de la autenticación se utilizó JWT (Json Web Token)
+- Para la calificación del personaje que se agrega en la lista se implementó un modal
 - Para la comunicación entre servidores se utilizó CORS
 - Para la implementación del buscador se utilizó ng2-search-filter
 
 ***
 ## 5. Autor 📍
 - [Mariana Guanda](https://github.com/marianagdeveloper)
+
+***
+## 6. Resultado final 📍
+
+### Vista: Inicio de sesión
+<div align="center">
+<img src="/frontend/src/assets/login.png">
+</div>
+
+**
+
+### Vista: Registro de usuario
+<div align="center">
+<img src="/frontend/src/assets/signup.png" width="800">
+</div>
+
+**
+
+### Vista: Personajes de Rick & Morty
+<div align="center">
+<img src="/frontend/src/assets/signup.png" width="800">
+</div>
+
+**
+
+### Vista: Calificación y comentario de personajes favoritos
+<div align="center">
+<img src="/frontend/src/assets/record.png" width="800">
+</div>
+
+**
+
+### Vista: Lista de personajes favoritos
+<div align="center">
+<img src="/frontend/src/assets/favorites.png" width="800">
+</div>
+
+**
+
+### Vista: Lista de personajes favoritos
+<div align="center">
+<img src="/frontend/src/assets/favorites.png" width="800">
+</div>
 
 
 
