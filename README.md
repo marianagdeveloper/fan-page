@@ -117,7 +117,7 @@ Para la ejecución del frontend:
 
 ### Vista: Personajes de Rick & Morty
 <div align="center">
-<img src="/frontend/src/assets/signup.png">
+<img src="/frontend/src/assets/characters.png">
 </div>
 
 ### Vista: Calificación y comentario de personajes favoritos
